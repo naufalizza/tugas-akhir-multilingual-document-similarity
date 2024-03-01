@@ -217,7 +217,7 @@ def send_document(chat_id, document_path):
         print(error_message)
         send_message(CHAT_ID, f'```{SENDER.replace(" ",  "")}_ERROR\nerror_message```')
 
-def handle_telegram_report_bot(epoch: int, file_paths: list[str]):
+def handle_telegram_report_bot(epoch, file_paths):
     global CHAT_ID, SENDER
     message = f'**`[Epoch #{epoch+1}]`** \nfrom **`[{SENDER}]`** \nis done at **`[{str(time.localtime().tm_hour+7).zfill(2)}:{str(time.localtime().tm_min).zfill(2)}]`**.'
     if epoch == -1: message = f'```{SENDER.replace(" ",  "")}_info\n[{SENDER}] INITIALIZING TRAINING...```'
