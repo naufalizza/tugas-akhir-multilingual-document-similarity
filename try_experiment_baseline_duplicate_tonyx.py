@@ -322,7 +322,8 @@ schedule = get_cosine_schedule_with_warmup(optimizer=optimizer,
 
 # untuk gpu training
 # device = torch.device("cpu")
-device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
+# device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
+device = torch.device("cuda:0")
 if torch.cuda.is_available(): torch.cuda.empty_cache() # Clear all CUDA memory
 # Check if multiple GPUs are available
 if torch.cuda.device_count() > 1:
