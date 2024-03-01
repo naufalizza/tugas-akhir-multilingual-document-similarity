@@ -226,8 +226,9 @@ def handle_telegram_report_bot(epoch: int, file_paths: list[str]):
         send_document(CHAT_ID, file_path)
 
 # test file sending:
+print("TEST TELEGRAM BOT MESSAGE")
 handle_telegram_report_bot(-1, [])
-
+print("...done")
 """## TRAINING"""
 
 # TRAINING
