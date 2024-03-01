@@ -30,7 +30,7 @@ MODEL_PATH = "./baseline_model"
 # load dataset
 import pickle, os
 
-DATA_PATH = "./tugas-akhir-multilingual-document-similarity/compiled_data"
+DATA_PATH = "./compiled_data"
 
 train_data_path = os.path.join(DATA_PATH, "train_data_with_augment.pickle")
 eval_data_path = os.path.join(DATA_PATH, "eval_data.pickle")
