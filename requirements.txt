@@ -1,5 +1,5 @@
 torch==1.9.0
-transformers
+transformers==4.9.2
 tqdm
 numpy
 sentencepiece
