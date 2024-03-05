@@ -3,4 +3,4 @@ transformers==3.5.0
 six
 tqdm
 numpy
-sentencepiece
+sentencepiece==0.1.91
