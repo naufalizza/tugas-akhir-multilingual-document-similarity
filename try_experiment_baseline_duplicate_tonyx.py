@@ -329,12 +329,7 @@ if torch.cuda.is_available(): torch.cuda.empty_cache() # Clear all CUDA memory
 # Check if multiple GPUs are available
 if torch.cuda.device_count() > 1:
     print("Let's use", torch.cuda.device_count(), "GPUs!")
-    # Get the number of available GPUs
-    num_gpus = torch.cuda.device_count()
-    # Specify the GPU devices you want to use
-    device_ids = list(range(num_gpus))
-    # Wrap your model with DataParallel
-    model = DataParallel(model, device_ids=device_ids)
+    model = DataParallel(model)
 model.to(device)
 model.train()
 
