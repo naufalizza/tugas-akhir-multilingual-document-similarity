@@ -45,8 +45,8 @@ from transformers import XLMRobertaConfig, XLMRobertaModel, XLMRobertaTokenizer,
 
 # MODEL_NAME = "FacebookAI/xlm-roberta-base"
 MODEL_NAME = "FacebookAI/xlm-roberta-large"
-# COMBINED_TOKENS_SIZE = 512
-COMBINED_TOKENS_SIZE = 768
+COMBINED_TOKENS_SIZE = 512
+# COMBINED_TOKENS_SIZE = 768
 
 model_config = XLMRobertaConfig.from_pretrained(MODEL_NAME)
 tokenizer = XLMRobertaTokenizer.from_pretrained(MODEL_NAME)
